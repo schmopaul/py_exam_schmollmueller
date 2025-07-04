@@ -1,0 +1,2 @@
+# py_exam_schmollmueller
+Prüfungsbeispiele Paul Schmollmüller
