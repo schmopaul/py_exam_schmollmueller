@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Task List</title></head>
+<body>
+    <h1>All Tasks</h1>
+    {% if tasks %}
+    <table border="1" cellpadding="5">
+        <tr><th>ID</th><th>Title</th><th>Done</th></tr>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task['id'] }}</td>
+            <td>{{ task['title'] }}</td>
+            <td>{{ 'Yes' if task['done'] else 'No' }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No tasks available.</p>
+    {% endif %}
+</body>
+</html>
